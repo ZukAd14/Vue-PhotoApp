@@ -9,7 +9,7 @@ import Button from 'primevue/button'
 import { mapGetters } from 'vuex'
 export default {
   name: 'CategoriesList',
-  computed: mapGetters({ categories: 'allCategories' }),
+  computed: mapGetters({ categories: 'Categories/allCategories' }),
   components: { Button }
 }
 </script>

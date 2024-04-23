@@ -14,7 +14,7 @@ import { mapGetters } from 'vuex'
 export default {
   name: 'theFooter',
   computed: {
-    ...mapGetters(['categoriesAmount'])
+    ...mapGetters({ amount: 'Categories/categoriesAmount' })
   }
 }
 </script>

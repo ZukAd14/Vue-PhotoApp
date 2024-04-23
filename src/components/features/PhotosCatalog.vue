@@ -31,11 +31,11 @@ export default {
     }
   },
   computed: {
-    ...mapGetters({ photos: 'allPhotos' }),
-    ...mapState(['photosRequest'])
+    ...mapGetters({ photos: 'Photos/allPhotos' }),
+    ...mapState('Photos', ['photosRequest'])
   },
   methods: {
-    ...mapActions(['fetchPhotos', 'fetchCategoryPhotos', 'addVote']),
+    ...mapActions('Photos', ['fetchPhotos', 'fetchCategoryPhotos', 'addVote']),
     addVote2 (id) {
       this.addVote(id)
     },
